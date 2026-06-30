@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Canopy Alliance. Learn critical methods to save our environment, estimate your footprint with our eco-calculator, and take the green pledge today.">
+  <title>CanopyAlliance - Save Our Environment Together</title>
+  
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="nav-logo">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 8C17 12 13 21 12 21C11 21 7 12 7 8C7 4.5 9.5 2 12 2C14.5 2 17 4.5 17 8Z" />
+          <path d="M12 2C10.5 5 10 9 12 13C14 9 13.5 5 12 2Z" fill="currentColor" opacity="0.3"/>
+          <path d="M12 21V13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>Canopy</span>Alliance
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#pillars" class="nav-link">Pillars</a>
+        <a href="#methods" class="nav-link">Methods</a>
+        <a href="#calculator" class="nav-link">Eco-Quiz</a>
+        <a href="#register" class="nav-link">Pledge</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">
+          <!-- Moon Icon -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <!-- Sun Icon -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <a href="#register" class="btn btn-primary" id="header-cta-btn">Join Pledge</a>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Guard Our <span>Canopy</span>,<br>Secure Our Future</h1>
+          <p>The earth provides enough to satisfy every human needs, but not every human greed. Discover practical pathways, calculate your carbon weight, and take active responsibility to protect our global ecosystem.</p>
+          <div class="hero-actions">
+            <a href="#register" class="btn btn-primary" id="hero-primary-btn">Make a Pledge</a>
+            <a href="#calculator" class="btn btn-secondary" id="hero-secondary-btn">Check Footprint</a>
+          </div>
+        </div>
+        
+        <div class="hero-illustration">
+          <div class="eco-sphere">
+            <div class="eco-sphere-content">
+              <span class="eco-icon-large">🌱</span>
+              <p style="font-weight: 700; font-size: 1.1rem; color: var(--text-main); margin-bottom: 2px;">Green Canopy Initiative</p>
+              <p style="font-size: 0.9rem; color: var(--text-muted); max-width: 220px; margin: 0 auto;">Action begins with a single conscious choice.</p>
+            </div>
+            
+            <div class="eco-stat-card card-1" id="stat-card-1">
+              <div class="stat-icon">🌲</div>
+              <div class="stat-details">
+                <h4>50,420</h4>
+                <p>Trees Planted</p>
+              </div>
+            </div>
+            
+            <div class="eco-stat-card card-2" id="stat-card-2">
+              <div class="stat-icon">💧</div>
+              <div class="stat-details">
+                <h4>12.5M</h4>
+                <p>Liters Water Saved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pillars Section -->
+    <section id="pillars" style="background-color: var(--surface); border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border); transition: var(--transition-smooth);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Core <span>Eco-Pillars</span></h2>
+          <p>We target four main areas of environmental action to build a sustainable, resilient society.</p>
+        </div>
+        
+        <div class="pillars-grid">
+          <!-- Pillar Card 1 -->
+          <div class="pillar-card" id="pillar-biodiversity">
+            <div class="pillar-icon">🐾</div>
+            <h3>Biodiversity Shield</h3>
+            <p>Protecting wild species, defending natural forests, and creating native urban gardens to restore vital wildlife networks.</p>
+          </div>
+          <!-- Pillar Card 2 -->
+          <div class="pillar-card" id="pillar-energy">
+            <div class="pillar-icon">⚡</div>
+            <h3>Clean Decarbonization</h3>
+            <p>Phasing out carbon-heavy fossil fuels and driving energy efficiency inside our homes and neighborhood buildings.</p>
+          </div>
+          <!-- Pillar Card 3 -->
+          <div class="pillar-card" id="pillar-waste">
+            <div class="pillar-icon">♻️</div>
+            <h3>Circular Economy</h3>
+            <p>Refusing single-use plastics, choosing compostable materials, and recycling carefully to reach net-zero landfill waste.</p>
+          </div>
+          <!-- Pillar Card 4 -->
+          <div class="pillar-card" id="pillar-water">
+            <div class="pillar-icon">🚿</div>
+            <h3>Water Stewardship</h3>
+            <p>Using water mindfully, installing rainwater recovery systems, and preventing chemical run-off from reaching waterways.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conservation Methods Section -->
+    <section id="methods">
+      <div class="container">
+        <div class="section-header">
+          <h2>Practical <span>Methods</span> to Save Earth</h2>
+          <p>Simple shifts in our daily schedules add up to massive carbon reductions. Learn where to start.</p>
+        </div>
+        
+        <div class="methods-tab-container">
+          <!-- Tab Headers -->
+          <div class="methods-tabs" role="tablist">
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="energy-panel" id="tab-energy">
+              <span>⚡</span> Energy Conservation
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="water-panel" id="tab-water">
+              <span>💧</span> Water Mindfulness
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="waste-panel" id="tab-waste">
+              <span>♻️</span> Waste Elimination
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="commute-panel" id="tab-commute">
+              <span>🚗</span> Green Commuting
+            </button>
+          </div>
+          
+          <!-- Tab Panel 1: Energy -->
+          <div class="tab-panel active" id="energy-panel" role="tabpanel" aria-labelledby="tab-energy">
+            <div class="method-content-grid">
+              <div class="method-text">
+                <h3>Optimize Daily Energy Use</h3>
+                <p>Buildings and appliances account for a massive share of global energy consumption. Take control of your carbon footprint right at the wall outlet.</p>
+                <div class="method-steps">
+                  <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-details">
+                      <h4>Transition to Smart LEDs</h4>
+                      <p>LED bulbs consume up to 80% less energy than old incandescent alternatives and last 25 times longer.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-details">
+                      <h4>Kill "Vampire Power"</h4>
+                      <p>Appliances draw power even when turned off. Unplug electronic devices or use smart power strips to cut standby power.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-details">
+                      <h4>Install Smart Thermostats</h4>
+                      <p>Adjusting temperature automatically when you leave saves up to 10% on yearly heating and cooling costs.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="method-visual">
+                <div class="eco-tip-badge">
+                  <span class="badge-icon">💡</span>
+                  <h4>Pro Energy Tip</h4>
+                  <p>Lowering your home water heater setting to 120°F (49°C) cuts heat losses and saves substantial cash.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Panel 2: Water -->
+          <div class="tab-panel" id="water-panel" role="tabpanel" aria-labelledby="tab-water">
+            <div class="method-content-grid">
+              <div class="method-text">
+                <h3>Adopt Water Mindfulness</h3>
+                <p>Less than 1% of Earth's water is fresh and accessible. Every drop saved relieves pressure on rivers and reservoirs.</p>
+                <div class="method-steps">
+                  <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-details">
+                      <h4>Install Low-Flow Fixtures</h4>
+                      <p>Replacing standard faucet aerators and showerheads cuts bathroom water usage by 30% without sacrificing pressure.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-details">
+                      <h4>Harvest Rainwater</h4>
+                      <p>Capture roof runoff in storage barrels to water outdoor plants and lawn, bypassing tap systems entirely.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-details">
+                      <h4>Fix Leaks Quickly</h4>
+                      <p>A single dripping faucet can waste over 3,000 gallons of clean water annually. Inspect plumbing monthly.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="method-visual">
+                <div class="eco-tip-badge">
+                  <span class="badge-icon">💧</span>
+                  <h4>Pro Water Tip</h4>
+                  <p>Turn off the tap while brushing your teeth to save up to 4 gallons of clean drinking water every minute.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Panel 3: Waste -->
+          <div class="tab-panel" id="waste-panel" role="tabpanel" aria-labelledby="tab-waste">
+            <div class="method-content-grid">
+              <div class="method-text">
+                <h3>Eliminate Waste Streams</h3>
+                <p>Our planet is struggling under mountains of plastic and landfill trash. We can make a difference by transitioning to a circular system.</p>
+                <div class="method-steps">
+                  <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-details">
+                      <h4>Ban Single-Use Plastics</h4>
+                      <p>Ditch plastic shopping bags, water bottles, and takeout cutlery. Choose durable steel, canvas, and glass replacements.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-details">
+                      <h4>Compost Organic Scraps</h4>
+                      <p>Food waste releases dangerous methane gas in dry landfills. Composting returns rich nutrients directly back to local soil.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-details">
+                      <h4>Practice Mindful Procurement</h4>
+                      <p>Purchase goods in bulk, choose brands with minimal packaging, and repair broken items rather than dumping them.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="method-visual">
+                <div class="eco-tip-badge">
+                  <span class="badge-icon">🍎</span>
+                  <h4>Pro Waste Tip</h4>
+                  <p>Writing a weekly meal plan keeps grocery purchases focused and dramatically cuts down on kitchen waste.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Panel 4: Commuting -->
+          <div class="tab-panel" id="commute-panel" role="tabpanel" aria-labelledby="tab-commute">
+            <div class="method-content-grid">
+              <div class="method-text">
+                <h3>Revolutionize Your Commute</h3>
+                <p>Transportation produces roughly one-fifth of global carbon dioxide emissions. Altering how we travel clears regional air.</p>
+                <div class="method-steps">
+                  <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-details">
+                      <h4>Embrace Active Travel</h4>
+                      <p>Walk or ride a bicycle for quick trips under two miles. It reduces emissions to zero and boosts cardiovascular fitness.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-details">
+                      <h4>Utilize Public Networks</h4>
+                      <p>Boarding trains and urban buses reduces carbon footprints per passenger-mile by up to 75% compared to single-driver cars.</p>
+                    </div>
+                  </div>
+                  <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-details">
+                      <h4>Carpool & Combine Trips</h4>
+                      <p>Coordinate errands with housemates or coworkers. Pooling vehicle use extends engine life and minimizes highway congestion.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="method-visual">
+                <div class="eco-tip-badge">
+                  <span class="badge-icon">🚲</span>
+                  <h4>Pro Travel Tip</h4>
+                  <p>Keeping vehicle tires inflated correctly optimizes gas mileage, extending vehicle efficiency by 3%.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eco-Calculator Section -->
+    <section id="calculator" style="background-color: var(--surface); border-top: 1px solid var(--surface-border); border-bottom: 1px solid var(--surface-border); transition: var(--transition-smooth);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Eco-Footprint <span>Calculator</span></h2>
+          <p>Find out where you stand! Answer three simple questions to estimate your yearly footprint score and get custom tips.</p>
+        </div>
+        
+        <div class="calc-card" id="carbon-quiz">
+          <!-- Step 1 -->
+          <div class="calc-quiz-step active" id="quiz-step-1" data-step="1">
+            <div class="calc-step-indicator">Question 1 of 3</div>
+            <h3>What best describes your primary weekly transport habits?</h3>
+            <div class="calc-options">
+              <label class="calc-option">
+                <input type="radio" name="commute" value="low">
+                <span>Walk, bicycle, or use electric transit most days</span>
+              </label>
+              <label class="calc-option">
+                <input type="radio" name="commute" value="medium">
+                <span>Routinely ride public buses, trains, or carpool</span>
+              </label>
+              <label class="calc-option">
+                <input type="radio" name="commute" value="high">
+                <span>Drive alone daily in a gas-powered car</span>
+              </label>
+            </div>
+            <div class="calc-footer">
+              <div></div> <!-- empty placeholder to push button to right -->
+              <button class="btn btn-primary next-step-btn" disabled>Next Question &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="calc-quiz-step" id="quiz-step-2" data-step="2">
+            <div class="calc-step-indicator">Question 2 of 3</div>
+            <h3>What is your typical dietary pattern?</h3>
+            <div class="calc-options">
+              <label class="calc-option">
+                <input type="radio" name="diet" value="low">
+                <span>Fully plant-based / vegan or vegetarian</span>
+              </label>
+              <label class="calc-option">
+                <input type="radio" name="diet" value="medium">
+                <span>Low meat consumption, focused on local products</span>
+              </label>
+              <label class="calc-option">
+                <input type="radio" name="diet" value="high">
+                <span>Regular meat consumption (beef, pork, chicken) weekly</span>
+              </label>
+            </div>
+            <div class="calc-footer">
+              <button class="btn btn-secondary prev-step-btn">&larr; Back</button>
+              <button class="btn btn-primary next-step-btn" disabled>Next Question &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="calc-quiz-step" id="quiz-step-3" data-step="3">
+            <div class="calc-step-indicator">Question 3 of 3</div>
+            <h3>How active are you in sorting domestic waste and recycling?</h3>
+            <div class="calc-options">
+              <label class="calc-option">
+                <input type="radio" name="waste" value="low">
+                <span>Strictly separate papers, plastics, compost food wastes</span>
+              </label>
+              <label class="calc-option">
+                <input type="radio" name="waste" value="medium">
+                <span>Recycle glass and paper sporadically; discard the rest</span>
+              </label>
+              <label class="calc-option">
+                <input type="radio" name="waste" value="high">
+                <span>Throw all household garbage into one generic bin</span>
+              </label>
+            </div>
+            <div class="calc-footer">
+              <button class="btn btn-secondary prev-step-btn">&larr; Back</button>
+              <button class="btn btn-primary next-step-btn" id="quiz-submit-btn" disabled>Calculate Score</button>
+            </div>
+          </div>
+
+          <!-- Quiz Result -->
+          <div class="calc-result" id="quiz-result-view">
+            <div class="result-gauge">
+              <span class="gauge-val" id="carbon-score-val">0.0</span>
+              <span class="gauge-lbl">Tons CO₂e/Yr</span>
+            </div>
+            <h3 id="carbon-feedback-title">Calculating...</h3>
+            <p id="carbon-feedback-desc">Analyzing your eco-impact statistics...</p>
+            <div style="display: flex; gap: 16px; justify-content: center;">
+              <button class="btn btn-secondary" id="quiz-reset-btn">Retake Quiz</button>
+              <a href="#register" class="btn btn-primary">Take Action Pledge</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration / Pledge Section -->
+    <section id="register">
+      <div class="container register-grid">
+        <div class="register-info">
+          <h2>Make A <span>Pledge</span> For A Better Tomorrow</h2>
+          <p>By registering, you commit to integrating eco-friendly practices into your daily life. You'll receive a personalized pledge certificate and optional monthly community tips to stay on track.</p>
+          
+          <div class="benefits-list">
+            <div class="benefit-card">
+              <div class="benefit-icon">🤝</div>
+              <div class="benefit-detail">
+                <h4>Join Global Network</h4>
+                <p>Connect with a passionate community of environmental defenders active in 45 countries.</p>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">📈</div>
+              <div class="benefit-detail">
+                <h4>Track Cumulative Impact</h4>
+                <p>Log actions on your personal dashboard to see your carbon and water impact reductions build up.</p>
+              </div>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">📄</div>
+              <div class="benefit-detail">
+                <h4>Receive Green Certificate</h4>
+                <p>Display your dedication to sustainable action with a custom certificate you can share.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Registration Form Card -->
+        <div class="form-card" id="form-container">
+          <form id="pledge-form" novalidate>
+            <div class="form-group">
+              <label for="pledge-name">Full Name</label>
+              <input type="text" id="pledge-name" class="form-control" placeholder="Enter your full name" required>
+              <div class="form-error" id="name-error">Please tell us your name.</div>
+            </div>
+            
+            <div class="form-group">
+              <label for="pledge-email">Email Address</label>
+              <input type="email" id="pledge-email" class="form-control" placeholder="name@example.com" required>
+              <div class="form-error" id="email-error">Please write a valid email address.</div>
+            </div>
+            
+            <div class="form-group">
+              <label for="pledge-type">Core Focus Area</label>
+              <select id="pledge-type" class="form-control">
+                <option value="Carbon Reducer">Carbon Warrior (Energy & Travel focus)</option>
+                <option value="Water Saver">Water Saver (Household efficiency focus)</option>
+                <option value="Waste Guardian">Waste Guardian (Refuse, Reuse & Composting)</option>
+                <option value="Tree Planter">Flora Protector (Trees, gardens, biodiversity)</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="pledge-text">Custom Commitment (Optional)</label>
+              <textarea id="pledge-text" class="form-control" style="resize: vertical; min-height: 80px;" placeholder="e.g. I pledge to bike for trips under 2 miles..."></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-checkbox">
+                <input type="checkbox" id="pledge-agree" required>
+                <span>I commit to taking active personal steps to protect, restore, and support the biosphere.</span>
+              </label>
+              <div class="form-error" id="agree-error" style="margin-top: 8px;">Please check this box to confirm your commitment.</div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="pledge-submit-btn">Complete Registration</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pledge Certificate Popup Modal -->
+  <div class="certificate-modal" id="certificate-modal" role="dialog" aria-modal="true" aria-labelledby="cert-title-id">
+    <div class="certificate-card">
+      <button class="cert-close" id="cert-close-btn" aria-label="Close certificate">&times;</button>
+      <span class="cert-badge">🎖️</span>
+      <h2 class="cert-title" id="cert-title-id">Eco Pledge</h2>
+      <span class="cert-sub">Certificate of Commitment</span>
+      <p class="cert-text">This is proudly presented to</p>
+      <span class="cert-name" id="cert-user-name">Jane Doe</span>
+      <p class="cert-text">for committing to protect our biosphere as a certified</p>
+      <p class="cert-text"><strong class="cert-pledge-type" id="cert-user-pledge">Waste Guardian</strong></p>
+      <p class="cert-text" id="cert-custom-text" style="font-style: italic; font-size: 0.95rem; color: var(--text-muted);"></p>
+      
+      <div class="cert-footer">
+        <div>
+          <p>Date</p>
+          <strong id="cert-date">June 30, 2026</strong>
+        </div>
+        <div style="text-align: right;">
+          <p>Canopy Alliance</p>
+          <span class="cert-sig">The Green Canopy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 8C17 12 13 21 12 21C11 21 7 12 7 8C7 4.5 9.5 2 12 2C14.5 2 17 4.5 17 8Z" />
+            <path d="M12 2C10.5 5 10 9 12 13C14 9 13.5 5 12 2Z" fill="currentColor" opacity="0.3"/>
+            <path d="M12 21V13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Canopy</span>Alliance
+        </a>
+        <p>A global group of environmental advocates dedicated to building green, climate-resilient futures through action.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#pillars">Eco-Pillars</a></li>
+          <li><a href="#methods">Methods</a></li>
+          <li><a href="#calculator">Eco-Quiz</a></li>
+          <li><a href="#register">Make a Pledge</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="footer-social-icons">
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Canopy Alliance. All rights reserved. Created for environmental preservation.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript Link -->
+  <script src="script.js"></script>
+</body>
+</html>
